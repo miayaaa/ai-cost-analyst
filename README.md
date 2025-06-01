@@ -54,11 +54,14 @@ streamlit run cost_analyst_app.py
 Then open the local URL that Streamlit provides in your browser.
 
 ## 📌 Sample Questions
-Plot average daily credits used per warehouse.
 
-Show credit usage trends for each warehouse.
+Show credit usage trends for WH_A.
 
-Visualize total daily credits in a line chart.
+Plot average monthly credits used per warehouse.
+
+Show credit usage trends for WH_A in May.
+
+Show monthly bar chart for WH_B
 
 
 
