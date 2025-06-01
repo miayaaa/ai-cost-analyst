@@ -55,7 +55,9 @@ Then open the local URL that Streamlit provides in your browser.
 
 ## 📌 Sample Questions
 Plot average daily credits used per warehouse.
+
 Show credit usage trends for each warehouse.
+
 Visualize total daily credits in a line chart.
 
 
