@@ -59,9 +59,12 @@ Show credit usage trends for WH_A.
 
 Plot average monthly credits used per warehouse.
 
-Show credit usage trends for WH_A in May.
+Show bar chart of credits used by WH_A in May.
 
-Show monthly bar chart for WH_B
+Compare WH_A and WH_B in May using bar chart.
+
+Show line chart for WH_A in April.
+
 
 
 
