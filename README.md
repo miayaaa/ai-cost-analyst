@@ -8,7 +8,6 @@ Users can ask questions like:
 
 The app uses **LangChain Agents**, **OpenAI API**, and **matplotlib** to generate and render Python code in real time.
 
----
 
 ## 🚀 Features
 
@@ -17,7 +16,6 @@ The app uses **LangChain Agents**, **OpenAI API**, and **matplotlib** to generat
 ✅ Interactive charts rendered with Streamlit  
 ✅ Works with your own Snowflake cost data (via CSV)
 
----
 
 ## 🛠️ Tech Stack
 
@@ -27,7 +25,6 @@ The app uses **LangChain Agents**, **OpenAI API**, and **matplotlib** to generat
 - [matplotlib](https://matplotlib.org/)
 - [pandas](https://pandas.pydata.org/)
 
----
 
 ## 📦 Setup
 
