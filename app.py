@@ -2,7 +2,7 @@ from langchain_openai import ChatOpenAI
 from langchain.agents import Tool, initialize_agent, AgentType
 from dotenv import load_dotenv
 import os
-import io
+import re
 import matplotlib.pyplot as plt
 import pandas as pd
 import streamlit as st
@@ -35,10 +35,16 @@ with st.expander("📊 Preview Data"):
 # ✅ Safely execute LLM-generated Python plotting code and return figure
 
 
+def clean_code_block(code: str):
+    # Remove ```python or ``` or similar
+    return re.sub(r"```[\w]*\n?", "", code).strip()
+
+
 def safe_execute(code: str, df):
     local_vars = {"df": df, "plt": plt}
     try:
-        exec(code, {}, local_vars)
+        cleaned_code = clean_code_block(code)
+        exec(cleaned_code, {}, local_vars)
         fig = plt.gcf()
         return fig
     except Exception as e:
@@ -67,7 +73,7 @@ def run_agent():
         )
     ]
 
-    llm = ChatOpenAI(temperature=0)
+    llm = ChatOpenAI(model="gpt-4o", temperature=0)
 
     return initialize_agent(
         tools=tools,
